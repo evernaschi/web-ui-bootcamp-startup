@@ -1,3 +1,13 @@
-[class$="r"]{
+[class$="r"] {
   background-color: #ff00ff;
 }
+
+/*
+html [class] {
+   font-size: 30px; 
+}
+
+.oh-no-inline-styles {
+  background-color: green !important;
+}
+*/
