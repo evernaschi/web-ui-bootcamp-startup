@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Ex A</title>
+  </head>
+  <body>
+    <header class="header">
+      Jokes Web
+    </header>
+    <div class="content">
+      <nav class="column">
+        This is a nav
+      </nav>
+      <section class="column">
+        <button onclick="getResponse()">Get Response</button>
+        <button onclick="getResponseFetch('http://api.icndb.com/jokes/random')">Get Response Using Fetch</button>
+        <p id="result"></p>
+      </section>
+      <aside class="column">
+        This is the aside
+      </aside>
+    </div>
+    <footer class="footer">
+      This is the root footer
+    </footer>
+  </body>
+</html>
