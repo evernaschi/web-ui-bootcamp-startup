@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Eric Vernaschi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 Ex C</title>
+</head>
+<body>
+  <header>
+    <h1>Sing Up</h1>
+  </header>
+  <main role="main">
+    <form>
+      <p>First Name:</p>
+      <input type="text" aria-label="fName" placeholder="Your name" required>
+      <p>Last Name:</p>
+      <input type="text" aria-label="lName" placeholder="Your last name" required>
+      <p>Email:</p>
+      <input type="email" aria-label="email" placeholder="Your Email" required>
+      <p>Birth Date:</p>
+      <input type="date" aria-label="bDate" required>
+      <p>Choose Your Favorite Sport:</p>
+      <select required aria-label="sports">
+        <option value="">None</option>
+        <option value="tennis">Tennis</option>
+        <option value="soccer">Soccer</option>
+        <option value="hockey">Hockey</option>
+      </select>
+      <br>
+      <p>Small Bio</p>
+      <textarea aria-label="bio" placeholder="Max Length 100 characters." maxlength="100"></textarea>
+      <br>
+      <button type="submit" value="signup">Sign Up</button>
+      <button type="reset" value="reset">Clear All Fields</button>
+    </form>
+  </main>
+</body>
+</html>
