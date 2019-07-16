@@ -1,0 +1,16 @@
+header,
+footer, 
+aside, 
+nav {
+  background-color: red;
+}
+
+html {
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+header,
+footer {
+  text-align: center;
+}

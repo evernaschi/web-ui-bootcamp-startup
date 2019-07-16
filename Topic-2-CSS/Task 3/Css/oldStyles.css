@@ -1,0 +1,40 @@
+header, 
+footer, 
+aside, 
+nav {
+  background-color: red;
+}
+
+html {
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+.header {
+  font-size: 46px;
+}
+
+.footer {
+  font-size:10px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.navigation {
+  font-size: 12px;
+}
+
+.sidebar {
+  font-size: 10px;
+}
+
+[class$="r"] {
+  background-color: #ff00ff;
+}

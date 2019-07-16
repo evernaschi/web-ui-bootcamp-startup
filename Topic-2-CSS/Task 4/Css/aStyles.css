@@ -1,0 +1,32 @@
+html {
+  background-color: #333;
+}
+
+body * {
+  background-color: darkslategray;
+  color: white;
+  border-radius: 4px;
+  margin: 0.5%;
+  padding: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+
+.navigation, 
+.content, 
+.sidebar {
+  float: left;
+  height: 250px;
+  width: 28.3%;
+}
+
+.content *{
+  background-color: dimgrey;
+  height: 10%;
+  margin: 10px;
+}
+
+.footer {
+  clear: both;
+}
