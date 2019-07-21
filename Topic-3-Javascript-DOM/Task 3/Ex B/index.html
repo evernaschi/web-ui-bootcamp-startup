@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Ex B</title>
+  </head>
+  <body>
+    <header class="header">
+      Repositories Showcase
+    </header>
+    <div class="content">
+      <nav class="column">
+        This is a nav
+      </nav>
+      <section class="column">
+        <button onclick="getResponseFetch('http://api.github.com/search/repositories?q=JavaScript')">Get Response</button>
+        <br>
+        <input type="text" id="inp" placeholder="Search..."></input>
+        <button onclick="search('http://api.github.com/search/repositories')">Search</button>
+      </section>
+      <aside class="column">
+        This is the aside
+        <p id="result"></p>
+      </aside>
+    </div>
+    <footer class="footer">
+      This is the root footer
+    </footer>
+  </body>
+</html>
