@@ -3,7 +3,7 @@
    in the HTML document
 */
 
-async function getResponseFetch(url){
+async function getResponseFetch(url) {
   let req = await fetch(url);
   let ansObj = await req.json();
   list = [];
@@ -17,7 +17,7 @@ async function getResponseFetch(url){
    in the HTML document
 */
 
-async function search(url){
+async function search(url) {
   let param = document.getElementById("inp").value;
   param = '?q=' + param
   let req = await fetch(url+param);

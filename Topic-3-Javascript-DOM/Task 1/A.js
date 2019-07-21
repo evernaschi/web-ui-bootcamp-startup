@@ -1,5 +1,5 @@
-function checkPalindrome(){
-  let phrase,phrase2;
+function checkPalindrome() {
+  let phrase, phrase2;
 
   //Normalize the input phrase
   phrase = document.getElementById("inp").value;
@@ -10,6 +10,6 @@ function checkPalindrome(){
   phrase2 = phrase.split("").reverse().join("");
 
   //compare both phrases
-  document.getElementById("result").innerHTML = phrase===phrase2;
+  document.getElementById("result").innerHTML = phrase === phrase2;
 
 }

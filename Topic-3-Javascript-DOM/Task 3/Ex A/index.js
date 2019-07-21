@@ -4,14 +4,13 @@
 */
 
 function getResponse(){
-  var req = new XMLHttpRequest();
-  let ans;
-  req.open('GET','http://api.icndb.com/jokes/random',true);
-  req.responseType='json';
+  const req = new XMLHttpRequest();
+  req.open('GET','http://api.icndb.com/jokes/random', true);
+  req.responseType = 'json';
   req.send();
-  req.onreadystatechange = function(){
+  req.onreadystatechange = function() {
     ansObj = req.response;
-    if (ansObj !== null){
+    if (ansObj !== null) {
       let joke = ansObj.value.joke;
       document.getElementById("result").textContent = joke;
     }
@@ -27,7 +26,7 @@ oldJokes = []
 
 */
 
-async function getResponseFetch(url){
+async function getResponseFetch(url) {
   let req = await fetch(url);
   if(req.status === 500){
     // server error
