@@ -1,0 +1,30 @@
+<div *ngIf="movie">
+  <h2>{{movie.title | uppercase}} </h2>
+  <div class="container">
+    <h2>Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ID</td>
+          <td>{{movie.id}}</td>
+        </tr>
+        <tr>
+          <td>Release Year</td>
+          <td>{{movie.year}}</td>
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td>{{movie.title}}</td>
+        </tr>      
+      </tbody>
+    </table>
+    <button (click)="goBack()">Back</button>
+    <button routerLink="/detail/{{movie.id}}/modify">Modify</button>
+  </div>
+</div>

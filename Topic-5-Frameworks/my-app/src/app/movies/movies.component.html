@@ -1,0 +1,17 @@
+<h2>My Movies</h2>
+
+<ul class="movies">
+  <li *ngFor="let movie of movies" routerLink="/detail/{{movie.id}}">
+    <span>
+      {{movie.title}}
+    </span>
+    <button class="delete" title="delete movie"
+      (click)="delete(movie);$event.stopPropagation()">x</button>
+  </li>
+</ul>
+<div class="container">
+<button class="options" title="add movie"
+      routerLink="/add-movie">Add Movie</button>
+<button class="options" title="restart storage"
+      (click)="clearStorage()">Restart</button>
+</div>
