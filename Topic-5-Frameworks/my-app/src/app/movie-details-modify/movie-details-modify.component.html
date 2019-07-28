@@ -1,0 +1,36 @@
+<div *ngIf="movie">
+  <h2>{{movie.title | uppercase}} </h2>
+  <div class="container">
+    <h2>Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ID</td>
+          <td>        
+            {{ movie.id }}
+          </td>
+        </tr>
+        <tr>
+          <td>Release Year</td>
+          <td>        
+            <input [(ngModel)]="movie.year" placeholder="year"/>
+          </td>        
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td>        
+            <input [(ngModel)]="movie.title" placeholder="title"/>
+          </td>
+        </tr>      
+      </tbody>
+    </table>
+    <button (click)="goBack()">Cancel</button>
+    <button (click)="save()">Save</button>
+  </div>
+</div>

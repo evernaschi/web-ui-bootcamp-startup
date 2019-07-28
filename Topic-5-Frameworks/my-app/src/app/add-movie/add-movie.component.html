@@ -1,0 +1,27 @@
+  <h2> Add Movie </h2>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Release Year</td>
+          <td>        
+            <input #movieYear placeholder="ex: 1984"/>
+          </td>        
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td>        
+            <input #movieTitle placeholder="ex: Terminator"/>
+          </td>
+        </tr>      
+      </tbody>
+    </table>
+    <button (click)="goBack()">Cancel</button>
+    <button (click)="add(movieTitle.value, movieYear.value); movieYear.value='';movieTitle.value=''">Add</button>
+  </div>

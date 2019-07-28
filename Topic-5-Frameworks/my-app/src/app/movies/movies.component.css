@@ -1,0 +1,117 @@
+/* moviesComponent's private CSS styles */
+.movies {
+  list-style-type: none;
+  padding: 0;
+  width: 25em;
+  margin: auto;
+}
+.movies li {
+  position: relative;
+  cursor: pointer;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  border: 0.1em solid gray;
+}
+
+.movies li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+}
+
+.movies span {
+  color: #333;
+  text-decoration: none;
+  height: 1.6em;
+  line-height: 1.6em;
+  padding-left: 0.3em;
+  width: 250px;
+  vertical-align: bottom;
+}
+
+.movies span:hover {
+  color:#607D8B;
+}
+
+.movies .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+button.delete {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button.delete:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  margin-right: 0.3em;
+  float: right;
+  background-color: gray;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+button.options {
+  margin: 5px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+  width: 8em;
+}
+
+button.options:hover {
+  background-color: #cfd8dc;
+}
+
+button.options:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+button.options:active {
+  background-color: #e4e8eb;
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
