@@ -1,0 +1,9 @@
+<div class="container" *ngIf="last_search_list.length > 0">
+  <p>Last Searchs</p>
+  <div class="row" *ngFor="let search of last_search_list">
+      <label for="search" (click)="searchBooks(search)">{{search}}</label>
+  </div>  
+</div>
+<div class="container" *ngIf="last_search_list.length == 0">
+  <p>No searchs yet</p>
+</div>

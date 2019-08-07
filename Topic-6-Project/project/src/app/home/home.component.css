@@ -1,0 +1,46 @@
+app-search-form {
+  width: 50vw;
+  margin: auto;
+  display: block;
+}
+
+app-books {
+  width: 70vw;
+  margin: auto;
+  display: block;
+  }
+
+app-popular-authors {
+  width: 12vw;
+  float: left;
+  text-align: center;
+  margin-top: 25vh;
+  margin-left: 0.5vw;
+  overflow: hidden;
+}
+
+app-popular-authors:after {
+  clear: both;
+}
+
+app-last-searchs {
+  width: 12vw;
+  text-align: center;
+  margin-top: 25vh;
+  margin-right: 0.5vw;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  margin: auto;
+}
+
+.center {
+  display: block;
+  width: 70vw;
+  margin: auto;
+  margin-top: 30vh;
+  -webkit-transition: margin-top 0.6s;
+  transition: margin-top 0.6s;
+}

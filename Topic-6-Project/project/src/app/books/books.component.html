@@ -1,0 +1,10 @@
+<div class="content" *ngIf="books != undefined && books?.length>0" >
+  <div class="column" *ngFor="let n of [].constructor(column_num); index as j" >
+    <div *ngFor="let b of [].constructor(row_num); index as i">
+      <div routerLink="/detail/{{books[j+i*5].id}}" *ngIf="books[j+i*5]" class="book_container">
+        <img src="{{books[j+i*5].image}}" *ngIf="books[j+i*5]">
+        <p *ngIf="books[j+i*5]"> {{books[j+i*5].title}}</p>
+      </div>
+    </div>
+  </div>
+</div>

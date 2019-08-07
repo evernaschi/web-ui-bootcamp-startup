@@ -1,0 +1,19 @@
+<p>Find books</p>
+<tbody>
+  <tr>
+    <td>
+      <input id="oc-search-input" autocomplete="off" name="q" type="text" class="jfk-textinput with-auto-dir-text" title="Search Books" size="66" maxlength="2048" style="text-align: left;" dir="ltr" role="combobox" aria-autocomplete="list" (keydown.enter)="search()">
+    </td>
+    <td>
+      <div id="oc-search-button-box">
+        <div id="oc-search-button">
+          <input type="submit" value="Search Books" (click)="search()">
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody>
+<div class="container">
+  <button *ngIf="pages>1" [disabled]="actual_page<1" (click)="previousPage()">Previous Page</button>
+  <button *ngIf="pages>1" (click)="nextPage()">Next Page</button>
+</div>
