@@ -1,0 +1,6 @@
+<div class="container">
+<p>Most Popular Authors</p>
+  <div class="row" *ngFor="let author of authors">
+      <label for="author" (click)="searchAuthor(author)">{{author}}</label>
+  </div>  
+</div>

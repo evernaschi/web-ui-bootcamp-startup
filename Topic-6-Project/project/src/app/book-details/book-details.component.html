@@ -1,0 +1,23 @@
+<img src="{{cover}}">
+<div class="center" *ngIf="book">
+  <h1>{{book.volumeInfo.title}}</h1>
+  <div *ngIf="book.volumeInfo.authors">
+    <span> Author: </span> 
+    <span routerLink='/home' (click)="searchAuthor(book.volumeInfo.authors[0])" class="author"> {{book.volumeInfo.authors[0]}} </span>
+  </div>
+  <p *ngIf="book.volumeInfo.description"> Description: {{book.volumeInfo.description}} </p>
+  <p *ngIf="book.volumeInfo.categories"> Genre(s): {{book.volumeInfo.categories[0]}} </p>
+  <p *ngIf="book.volumeInfo.industryIdentifiers && book.volumeInfo.industryIdentifiers[1]">
+    ISBN: {{book.volumeInfo.industryIdentifiers[1].identifier}} 
+  </p>
+  <p *ngIf="book.volumeInfo.pageCount"> Page Count: {{book.volumeInfo.pageCount}} </p>
+  <p *ngIf="book.volumeInfo.publishedDate"> Published Date: {{book.volumeInfo.publishedDate}} </p>
+  <div *ngIf="book.volumeInfo.industryIdentifiers && book.volumeInfo.industryIdentifiers[1]">
+    <button *ngIf="!checkBookSaved()" (click)="saveBook(book)" class="notsaved">
+      Save Book
+    </button>
+    <button *ngIf="checkBookSaved()" (click)="displayAlert()" class="saved">
+      Saved
+  </button>
+  </div>
+</div>

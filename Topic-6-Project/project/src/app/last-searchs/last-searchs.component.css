@@ -1,0 +1,20 @@
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  text-decoration:underline;
+}
+
+.container {
+  background-color: #333;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0 0.3vw;
+  height: 35vh;
+}
+
+p {
+  text-transform: uppercase
+}

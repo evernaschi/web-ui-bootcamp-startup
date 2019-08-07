@@ -1,0 +1,14 @@
+<div *ngIf="my_books == undefined || my_books?.length == 0">
+  <h1>No books saved yet!</h1> 
+</div>
+<div class="content" *ngIf="my_books != undefined && my_books?.length > 0" >
+  <div class="column" *ngFor="let n of [].constructor(column_num); index as j" >
+    <div *ngFor="let b of [].constructor(row_num); index as i">
+      <div routerLink="/detail/{{my_books[j+i*5].id}}" *ngIf="my_books[j+i*5]" class="book_container">
+        <img src="{{my_books[j+i*5].image}}" *ngIf="my_books[j+i*5]">
+        <p *ngIf="my_books[j+i*5]"> {{my_books[j+i*5].title}}</p>
+        <button (click)="removeBook(my_books[j+i*5].id);$event.stopPropagation()">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
